@@ -1,0 +1,8 @@
+div{
+  outline: #336699 auto 1px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  background-color: #a9c8ee;
+  margin: 2rem;
+}

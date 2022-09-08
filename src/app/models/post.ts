@@ -1,8 +1,9 @@
 import { CommentType } from "./comment"
 
 export type Post = {
+  id: string,
   aggregateId: string,
-  tittle: string,
+  title: string,
   author: string,
   comments: CommentType[]
 }

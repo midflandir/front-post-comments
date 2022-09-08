@@ -18,14 +18,13 @@ export class MainComponent implements OnInit {
   constructor(private request:RequestService) { }
 
   ngOnInit(): void {
- //   this. bringPosts();
+    this. bringPosts();
 
   }
 
   bringPosts(){
     this.request.bringAllpost().subscribe(posts =>
      {
-//      console.log(posts)
       this.posts = posts} )
   }
 
