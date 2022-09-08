@@ -16,7 +16,7 @@
 <div *ngIf="posts">
 <div *ngFor="let post of posts">
   <a routerLink="/detail/{{post.aggregateId}}">
-     {{post.title}}
+     {{post.title}} - {{post.author}}
   </a><br><br>
 
 </div>
