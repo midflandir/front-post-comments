@@ -1,0 +1,15 @@
+.home {
+  border-radius: 4rem;
+  border: none;
+  cursor: pointer;
+  background-color: #25D366;
+  padding: 1rem;
+  padding-top: 4rem;
+
+  margin-left: 20px;
+
+}
+.whatsimg{
+  height:4rem ;
+}
+

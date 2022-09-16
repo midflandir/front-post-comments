@@ -1,23 +1,26 @@
 
-<h2>Main</h2>
-<label for = "newTittle">Tittle: </label>
-<input name = "newTittle" type="text" [(ngModel)]="newTittle" placeholder ="newTittle">
+
+<div *ngIf="!(availableState.token==='')" class="new">
+<label for = "newTittle">Create a Post: </label>
+<br><br>
+<input required minlength="4" name = "newTittle" type="text" [(ngModel)]="newTittle" placeholder ="Tittle">
 <br>
 <br>
-<label for = "newAuthor">Author: </label>
-<input name = "newAuthor" type="text" [(ngModel)]="newAuthor" placeholder ="newAuthor">
+<input required minlength="4" name = "newAuthor" type="text" [(ngModel)]="newAuthor" placeholder ="Author">
+
+
+<button class="button" (click)="submitPost()">
+  <img  class="whatsimg" src="../../../assets/images/arrow.png" >
+</button>
 <br>
 <br>
-<button (click)="submitPost()">Save Post</button>
-<br>
-<br>
-<h3>Post List: </h3>
-<br>
+</div>
+
+
 <div *ngIf="posts">
 <div *ngFor="let post of posts">
-  <a routerLink="/detail/{{post.aggregateId}}">
+ <p> <a class="post" routerLink="/detail/{{post.aggregateId}}">
      {{post.title}} - {{post.author}}
-  </a><br><br>
-
+  </a></p>
 </div>
 </div>

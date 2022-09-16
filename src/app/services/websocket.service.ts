@@ -11,11 +11,13 @@ export class WebsocketService {
 
 
 websocketgeneral():WebSocketSubject<Post>{
-  return webSocket('ws://localhost:8082/retrieve/mainSpace')
+ // return webSocket('ws://localhost:8082/retrieve/mainSpace')
+  return webSocket('wss://gama-ver2-23453.herokuapp.com/retrieve/mainSpace')
 }
 
 websocketComment(postid:string):WebSocketSubject<CommentType>{
-  return webSocket('ws://localhost:8082/retrieve/' + postid)
+ //  return webSocket('ws://localhost:8082/retrieve/' + postid)
+  return webSocket('wss://gama-ver2-23453.herokuapp.com/retrieve/' + postid)
 
 }
 

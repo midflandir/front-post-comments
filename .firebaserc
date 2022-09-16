@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "post-comments-8dfa1"
+  },
+  "targets": {
+    "post-comments-8dfa1": {
+      "hosting": {
+        "front-post-comments": [
+          "post-comments-8dfa1"
+        ]
+      }
+    }
+  }
+}

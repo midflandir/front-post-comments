@@ -1,8 +1,89 @@
-div{
-  outline: #336699 auto 1px;
-  border-bottom: 1px solid gray;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
-  background-color: #a9c8ee;
-  margin: 2rem;
+.comments{
+
+  font-family: Arial, Helvetica, sans-serif;
+  position: center;
+  padding: 10px;
+  max-width: 80%;
+  margin-left: 150px;
+
+}
+.commentscontainer{
+
+  height: calc(100vh - 300px);
+  overflow-y: auto;
+  overflow-x:hidden;
+
+}
+.header{
+  border-radius: 1rem;
+  transform: translateY(-80%);
+  position: absolute;
+  margin-left: 140px;
+  margin-right:  10%;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  padding-left: 30px;
+  background-color: #075E54;
+  color:#f8f8f8;
+}
+.new{
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: #242929;
+  box-sizing: border-box;
+  min-height: 1rem;
+
+  border-radius: 1rem;
+  background-color: #f8f8f8;
+  padding: 20px;
+  padding-bottom: 1px;
+
+}
+.contentinput{
+
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+
+}
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin-left: 5%;
+  margin-right: 10%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label{
+  width: 10%;
+}
+
+
+.button {
+
+
+  transform: translateY(-150%);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 4rem;
+  min-width: 4rem;
+  border-radius: 3rem;
+  border: none;
+
+
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-left: 90%;
+
+  cursor: pointer;
+  background-color: #128C7E;
+}
+.button:hover {
+  background-color: #25D366;
+}
+.whatsimg{
+  padding-left: 7px;
+  height:2rem ;
 }

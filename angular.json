@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "front-post-comments:build:production",
+            "firebaseProject": "post-comments-8dfa1",
+            "firebaseHostingSite": "post-comments-8dfa1"
+          }
         }
       }
     }
